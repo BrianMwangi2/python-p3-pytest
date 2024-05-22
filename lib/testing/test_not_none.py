@@ -2,6 +2,12 @@
 
 from not_none_functions import return_not_none
 
-# def test_return_not_none():
-#     '''in not_none_functions, function "return_not_none" returns a value that is not None.'''
-#     assert False
+def test_return_not_none():
+    '''in not_none_functions, function "return_not_none" returns a value that is not None.'''
+    result = return_not_none()
+    assert result is not None, "The function return_not_none should not return None."
+
+# To run the test
+if __name__ == "__main__":
+    test_return_not_none()
+    print("Test passed!")
